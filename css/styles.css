@@ -155,10 +155,12 @@ body {
 }
 
 .adress {
+  display: flex;
   margin-left: auto;
 }
 
 .adress-link-header {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -168,6 +170,16 @@ body {
   padding-bottom: 32px;
 }
 
+.adress-link-header {
+  display: flex;
+  align-items: center;
+}
+
+.icon-nav {
+  fill: #757575;
+  margin-right: 10px;
+}
+
 .adress-link-header:not(:last-child) {
   margin-right: 30px;
 }
@@ -175,6 +187,12 @@ body {
 .adress-link-header:hover,
 .adress-link-header:focus {
   color: var(--accent-color);
+}
+
+.adress-link-header:hover > .icon-nav,
+.adress-link-header:focus > .icon-nav {
+  stroke: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .adress-link-footer {
