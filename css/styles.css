@@ -41,6 +41,7 @@ body {
 
 .link {
   text-decoration: none;
+  font-style: normal;
 }
 
 .list {
@@ -415,6 +416,30 @@ body {
 .clients-list {
   display: flex;
   justify-content: space-between;
+}
+
+.clients-list-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-list-icon {
+  fill: #afb1b8;
+}
+
+.clients-list-link:hover {
+  border-color: var(--accent-color);
+}
+
+.clients-list-link:hover > .clients-list-icon,
+.clients-list-link:focus > .clients-list-icon {
+  fill: var(--accent-color);
 }
 
 .footer > .container {
