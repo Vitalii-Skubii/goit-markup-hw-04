@@ -472,6 +472,18 @@ body {
   margin-top: 20px;
 }
 
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-icon {
+  fill: #fff;
+}
+
 .adress-descr {
   line-height: 1.71;
   /* or 171% */
