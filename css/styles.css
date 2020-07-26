@@ -77,27 +77,6 @@ body {
   align-items: center;
 }
 
-.hero > .container {
-  text-align: center;
-}
-
-.hero {
-  max-width: 1600px;
-
-  background-color: #000f;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url(../images/header-img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .logo {
   display: block;
   font-family: 'Raleway', sans-serif;
@@ -120,10 +99,12 @@ body {
 .logo-blue {
   color: var(--accent-color);
 }
+
 .nav {
   display: flex;
   align-items: center;
 }
+
 .nav-list {
   display: flex;
   margin-top: 0px;
@@ -133,6 +114,7 @@ body {
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .nav .nav-link {
   display: block;
   font-family: var(--main-font);
@@ -160,7 +142,10 @@ body {
 }
 
 .adress-link-header {
-  display: block;
+  /* display: block; */
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -168,11 +153,6 @@ body {
 
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.adress-link-header {
-  display: flex;
-  align-items: center;
 }
 
 .icon-nav {
@@ -205,13 +185,31 @@ body {
   color: var(--accent-color);
 }
 
-.hero > .container {
-  flex-wrap: wrap;
-  justify-content: center;
+.hero {
+  max-width: 1600px;
 
+  background-color: #000f;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/header-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero > .container {
+  text-align: center;
+  /* flex-wrap: wrap;
+  justify-content: center; */
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .hero-title {
   font-family: var(--main-font);
   font-weight: 900;
@@ -250,6 +248,7 @@ body {
 .hero-button:focus {
   background-color: #188ce8;
 }
+
 .advantages > .container {
   padding-top: 94px;
   padding-bottom: 47px;
@@ -264,6 +263,7 @@ body {
   margin-top: 0px;
   margin-bottom: 10px;
 }
+
 .advantages-list {
   display: flex;
 }
@@ -273,6 +273,13 @@ body {
 }
 
 .advantages-list-img {
+  width: 270px;
+  height: 120px;
+
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+
+  padding: 25px 100px;
   margin-bottom: 30px;
 }
 
