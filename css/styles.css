@@ -50,6 +50,9 @@ body {
   margin: 0px;
 }
 
+img {
+  display: block;
+}
 /*header, 
 .hero,
 .advantages,
@@ -334,6 +337,7 @@ body {
   text-transform: uppercase;
   color: var(--dark-theme-text-color);
   background-color: aqua;
+  margin: 0;
 }
 
 .team {
@@ -346,6 +350,8 @@ body {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
+
+  padding-bottom: 24px;
 }
 
 .team-list {
@@ -382,8 +388,6 @@ body {
 .social-list {
   display: flex;
   justify-content: space-evenly;
-
-  margin-bottom: 24px;
 }
 
 .social-list-link {
@@ -549,6 +553,12 @@ body {
   margin-bottom: 30px;
 }
 
+.projects-list-card {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
 .projects-list-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -557,10 +567,12 @@ body {
   margin-bottom: 0;
 }
 
-.projects-list-item:hover,
-.projects-list-item:focus {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+.projects-list-item:hover .projects-list-card,
+.projects-list-item:focus .projects-list-card {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
